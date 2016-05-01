@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var coollogo: UIImageView!
+    @IBOutlet weak var coolBG: UIImageView!
+    @IBOutlet weak var TransformCool: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func MakeMeCoolAgain(sender: AnyObject) {
+        coollogo.hidden = false
+        coolBG.hidden = false
+        TransformCool.hidden = true
+    }
+    
 }
 
